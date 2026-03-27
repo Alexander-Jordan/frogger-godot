@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://4e0wub1b01en"]
+[gd_scene format=4 uid="uid://4e0wub1b01en"]
 
 [ext_resource type="Script" uid="uid://cgikt5vdhkago" path="res://common/destruct/destructor_2d.gd" id="1_3f6tk"]
 [ext_resource type="AudioStream" uid="uid://jusbdklcyjh7" path="res://assets/music/best-game-console-301284.mp3" id="1_17rgw"]
@@ -29,131 +29,131 @@ normal = Vector2(-1, 0)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7y0w"]
 size = Vector2(32, 15)
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=2005280206]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=977696937]
 stream = ExtResource("1_17rgw")
 volume_db = -12.0
 autoplay = true
 
-[node name="boundaries" type="Node" parent="."]
+[node name="boundaries" type="Node" parent="." unique_id=1610785975]
 
-[node name="Destructor2D" type="Area2D" parent="boundaries"]
+[node name="Destructor2D" type="Area2D" parent="boundaries" unique_id=1279112375]
 collision_layer = 2
 script = ExtResource("1_3f6tk")
 disabled = true
 metadata/_custom_type_script = "uid://cgikt5vdhkago"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D" unique_id=1874869325]
 shape = SubResource("WorldBoundaryShape2D_3f6tk")
 
-[node name="Destructor2D2" type="Area2D" parent="boundaries"]
+[node name="Destructor2D2" type="Area2D" parent="boundaries" unique_id=319097982]
 position = Vector2(0, 240)
 collision_layer = 2
 script = ExtResource("1_3f6tk")
 disabled = true
 metadata/_custom_type_script = "uid://cgikt5vdhkago"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D2" unique_id=1275175588]
 shape = SubResource("WorldBoundaryShape2D_axbkc")
 
-[node name="Destructor2D3" type="Area2D" parent="boundaries"]
+[node name="Destructor2D3" type="Area2D" parent="boundaries" unique_id=1611784916]
 collision_layer = 2
 script = ExtResource("1_3f6tk")
 disabled = true
 metadata/_custom_type_script = "uid://cgikt5vdhkago"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D3" unique_id=312847255]
 shape = SubResource("WorldBoundaryShape2D_802tp")
 
-[node name="Destructor2D4" type="Area2D" parent="boundaries"]
+[node name="Destructor2D4" type="Area2D" parent="boundaries" unique_id=632215453]
 position = Vector2(256, 0)
 collision_layer = 2
 script = ExtResource("1_3f6tk")
 disabled = true
 metadata/_custom_type_script = "uid://cgikt5vdhkago"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Destructor2D4" unique_id=814704665]
 shape = SubResource("WorldBoundaryShape2D_l7y0w")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="boundaries"]
+[node name="StaticBody2D" type="StaticBody2D" parent="boundaries" unique_id=1295417005]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/StaticBody2D" unique_id=210884916]
 position = Vector2(8, 24.5)
 shape = SubResource("RectangleShape2D_l7y0w")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="boundaries/StaticBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="boundaries/StaticBody2D" unique_id=1098213310]
 position = Vector2(56, 24.5)
 shape = SubResource("RectangleShape2D_l7y0w")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="boundaries/StaticBody2D"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="boundaries/StaticBody2D" unique_id=1544805178]
 position = Vector2(104, 24.5)
 shape = SubResource("RectangleShape2D_l7y0w")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="boundaries/StaticBody2D"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="boundaries/StaticBody2D" unique_id=1827555356]
 position = Vector2(152, 24.5)
 shape = SubResource("RectangleShape2D_l7y0w")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="boundaries/StaticBody2D"]
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="boundaries/StaticBody2D" unique_id=447526507]
 position = Vector2(200, 24.5)
 shape = SubResource("RectangleShape2D_l7y0w")
 
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="boundaries/StaticBody2D"]
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="boundaries/StaticBody2D" unique_id=1076466561]
 position = Vector2(248, 24.5)
 shape = SubResource("RectangleShape2D_l7y0w")
 
-[node name="log_spawners" type="Node" parent="."]
+[node name="log_spawners" type="Node" parent="." unique_id=554986440]
 
-[node name="LogSpawner" type="Node2D" parent="log_spawners"]
+[node name="LogSpawner" type="Node2D" parent="log_spawners" unique_id=1982056359]
 script = ExtResource("1_woy08")
 spawn_point = Vector2(-48, 40)
 time = 2.5
 spawnable_scene = ExtResource("3_no1gd")
 metadata/_custom_type_script = "uid://vy5p8gyicui5"
 
-[node name="Timer" type="Timer" parent="log_spawners/LogSpawner"]
+[node name="Timer" type="Timer" parent="log_spawners/LogSpawner" unique_id=955287921]
 
-[node name="LogSpawner2" type="Node2D" parent="log_spawners"]
+[node name="LogSpawner2" type="Node2D" parent="log_spawners" unique_id=143522208]
 script = ExtResource("1_woy08")
 spawn_point = Vector2(-64, 72)
 time = 5.0
 spawnable_scene = ExtResource("4_3f6tk")
 metadata/_custom_type_script = "uid://vy5p8gyicui5"
 
-[node name="Timer" type="Timer" parent="log_spawners/LogSpawner2"]
+[node name="Timer" type="Timer" parent="log_spawners/LogSpawner2" unique_id=1943763523]
 
-[node name="LogSpawner4" type="Node2D" parent="log_spawners"]
+[node name="LogSpawner4" type="Node2D" parent="log_spawners" unique_id=26304580]
 script = ExtResource("1_woy08")
 spawn_point = Vector2(-32, 88)
 time = 2.5
 spawnable_scene = ExtResource("2_4vbm2")
 metadata/_custom_type_script = "uid://vy5p8gyicui5"
 
-[node name="Timer" type="Timer" parent="log_spawners/LogSpawner4"]
+[node name="Timer" type="Timer" parent="log_spawners/LogSpawner4" unique_id=706361827]
 
-[node name="turtles_spawners" type="Node" parent="."]
+[node name="turtles_spawners" type="Node" parent="." unique_id=881705187]
 
-[node name="TurtlesSpawner" type="Node2D" parent="turtles_spawners"]
+[node name="TurtlesSpawner" type="Node2D" parent="turtles_spawners" unique_id=650540730]
 script = ExtResource("6_axbkc")
 spawn_point = Vector2(256, 56)
 time = 1.5
 spawnable_scene = ExtResource("7_l7y0w")
 metadata/_custom_type_script = "uid://b4y31hpbroh8v"
 
-[node name="Timer" type="Timer" parent="turtles_spawners/TurtlesSpawner"]
+[node name="Timer" type="Timer" parent="turtles_spawners/TurtlesSpawner" unique_id=1517919456]
 
-[node name="TurtlesSpawner2" type="Node2D" parent="turtles_spawners"]
+[node name="TurtlesSpawner2" type="Node2D" parent="turtles_spawners" unique_id=824937490]
 script = ExtResource("6_axbkc")
 spawn_point = Vector2(256, 104)
 time = 1.5
 spawnable_scene = ExtResource("8_drn0y")
 metadata/_custom_type_script = "uid://b4y31hpbroh8v"
 
-[node name="Timer" type="Timer" parent="turtles_spawners/TurtlesSpawner2"]
+[node name="Timer" type="Timer" parent="turtles_spawners/TurtlesSpawner2" unique_id=263305682]
 
-[node name="car_spawners" type="Node" parent="."]
+[node name="car_spawners" type="Node" parent="." unique_id=276629509]
 
-[node name="CarSpawner" type="Node2D" parent="car_spawners"]
+[node name="CarSpawner" type="Node2D" parent="car_spawners" unique_id=149641662]
 script = ExtResource("5_no1gd")
 direction = Vector2(-1, 0)
 spawn_point = Vector2(272, 136)
@@ -162,9 +162,9 @@ time = 1.0
 spawnable_scene = ExtResource("6_3f6tk")
 metadata/_custom_type_script = "uid://bb68e0iv2mymb"
 
-[node name="Timer" type="Timer" parent="car_spawners/CarSpawner"]
+[node name="Timer" type="Timer" parent="car_spawners/CarSpawner" unique_id=1064178392]
 
-[node name="CarSpawner2" type="Node2D" parent="car_spawners"]
+[node name="CarSpawner2" type="Node2D" parent="car_spawners" unique_id=1281689497]
 script = ExtResource("5_no1gd")
 spawn_point = Vector2(-16, 152)
 speed = 50
@@ -172,9 +172,9 @@ time = 3.0
 spawnable_scene = ExtResource("6_3f6tk")
 metadata/_custom_type_script = "uid://bb68e0iv2mymb"
 
-[node name="Timer" type="Timer" parent="car_spawners/CarSpawner2"]
+[node name="Timer" type="Timer" parent="car_spawners/CarSpawner2" unique_id=540773798]
 
-[node name="CarSpawner3" type="Node2D" parent="car_spawners"]
+[node name="CarSpawner3" type="Node2D" parent="car_spawners" unique_id=1569205026]
 script = ExtResource("5_no1gd")
 direction = Vector2(-1, 0)
 spawn_point = Vector2(272, 168)
@@ -183,18 +183,18 @@ time = 2.0
 spawnable_scene = ExtResource("6_3f6tk")
 metadata/_custom_type_script = "uid://bb68e0iv2mymb"
 
-[node name="Timer" type="Timer" parent="car_spawners/CarSpawner3"]
+[node name="Timer" type="Timer" parent="car_spawners/CarSpawner3" unique_id=2125784628]
 
-[node name="CarSpawner4" type="Node2D" parent="car_spawners"]
+[node name="CarSpawner4" type="Node2D" parent="car_spawners" unique_id=1611713277]
 script = ExtResource("5_no1gd")
 spawn_point = Vector2(-16, 184)
 time = 1.0
 spawnable_scene = ExtResource("6_3f6tk")
 metadata/_custom_type_script = "uid://bb68e0iv2mymb"
 
-[node name="Timer" type="Timer" parent="car_spawners/CarSpawner4"]
+[node name="Timer" type="Timer" parent="car_spawners/CarSpawner4" unique_id=573899304]
 
-[node name="CarSpawner6" type="Node2D" parent="car_spawners"]
+[node name="CarSpawner6" type="Node2D" parent="car_spawners" unique_id=304603337]
 script = ExtResource("5_no1gd")
 direction = Vector2(-1, 0)
 spawn_point = Vector2(272, 200)
@@ -203,18 +203,18 @@ time = 2.5
 spawnable_scene = ExtResource("6_3f6tk")
 metadata/_custom_type_script = "uid://bb68e0iv2mymb"
 
-[node name="Timer" type="Timer" parent="car_spawners/CarSpawner6"]
+[node name="Timer" type="Timer" parent="car_spawners/CarSpawner6" unique_id=1110221320]
 
-[node name="Frog" parent="." node_paths=PackedStringArray("tile_map_layer") instance=ExtResource("1_60rri")]
+[node name="Frog" parent="." unique_id=901972834 node_paths=PackedStringArray("tile_map_layer") instance=ExtResource("1_60rri")]
 z_index = 1
 position = Vector2(128, 232)
 tile_map_layer = NodePath("../TileMapLayer")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1028984731]
 position = Vector2(-8, 0)
 tile_map_data = PackedByteArray("AAAAAAQAAAACAAAAAAAAAAUAAAACAAAAAAAAAAYAAAACAAAAAAAAAAcAAAAAAAEAAAAAAAgAAAABAAEAAAABAAQAAAACAAAAAAABAAUAAAACAAAAAAABAAYAAAACAAAAAAABAAcAAAAAAAEAAAABAAgAAAABAAEAAAACAAQAAAACAAAAAAACAAUAAAACAAAAAAACAAYAAAACAAAAAAACAAcAAAAAAAEAAAACAAgAAAABAAEAAAADAAQAAAACAAAAAAADAAUAAAACAAAAAAADAAYAAAACAAAAAAADAAcAAAAAAAEAAAADAAgAAAABAAEAAAAEAAQAAAACAAAAAAAEAAUAAAACAAAAAAAEAAYAAAACAAAAAAAEAAcAAAAAAAEAAAAEAAgAAAABAAEAAAAFAAQAAAACAAAAAAAFAAUAAAACAAAAAAAFAAYAAAACAAAAAAAFAAcAAAAAAAEAAAAFAAgAAAABAAEAAAAGAAQAAAACAAAAAAAGAAUAAAACAAAAAAAGAAYAAAACAAAAAAAGAAcAAAAAAAEAAAAGAAgAAAABAAEAAAAHAAQAAAACAAAAAAAHAAUAAAACAAAAAAAHAAYAAAACAAAAAAAHAAcAAAAAAAEAAAAHAAgAAAABAAEAAAAIAAQAAAACAAAAAAAIAAUAAAACAAAAAAAIAAYAAAACAAAAAAAIAAcAAAAAAAEAAAAIAAgAAAABAAEAAAAJAAQAAAACAAAAAAAJAAUAAAACAAAAAAAJAAYAAAACAAAAAAAJAAcAAAAAAAEAAAAJAAgAAAABAAEAAAAKAAQAAAACAAAAAAAKAAUAAAACAAAAAAAKAAYAAAACAAAAAAAKAAcAAAAAAAEAAAAKAAgAAAABAAEAAAALAAQAAAACAAAAAAALAAUAAAACAAAAAAALAAYAAAACAAAAAAALAAcAAAAAAAEAAAALAAgAAAABAAEAAAAMAAQAAAACAAAAAAAMAAUAAAACAAAAAAAMAAYAAAACAAAAAAAMAAcAAAAAAAEAAAAMAAgAAAABAAEAAAANAAQAAAACAAAAAAANAAUAAAACAAAAAAANAAYAAAACAAAAAAANAAcAAAAAAAEAAAANAAgAAAABAAEAAAAOAAQAAAACAAAAAAAOAAUAAAACAAAAAAAOAAYAAAACAAAAAAAOAAcAAAAAAAEAAAAOAAgAAAABAAEAAAAPAAQAAAACAAAAAAAPAAUAAAACAAAAAAAPAAYAAAACAAAAAAAPAAcAAAAAAAEAAAAPAAgAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAMAAAACAAAAAAABAAAAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAACAAAAAAABAAMAAAACAAAAAAACAAAAAAAAAAAAAAACAAIAAAACAAAAAAACAAMAAAACAAAAAAADAAAAAAAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAACAAAAAAADAAMAAAACAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAACAAAAAAAEAAMAAAACAAAAAAAFAAAAAAAAAAAAAAAFAAIAAAACAAAAAAAFAAMAAAACAAAAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAACAAAAAAAGAAMAAAACAAAAAAAHAAAAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAIAAAACAAAAAAAHAAMAAAACAAAAAAAIAAAAAAAAAAAAAAAIAAIAAAACAAAAAAAIAAMAAAACAAAAAAAJAAAAAAAAAAAAAAAJAAEAAAAAAAAAAAAJAAIAAAACAAAAAAAJAAMAAAACAAAAAAAKAAAAAAAAAAAAAAAKAAEAAAAAAAAAAAAKAAIAAAACAAAAAAAKAAMAAAACAAAAAAALAAAAAAAAAAAAAAALAAIAAAACAAAAAAALAAMAAAACAAAAAAAMAAAAAAAAAAAAAAAMAAEAAAAAAAAAAAAMAAIAAAACAAAAAAAMAAMAAAACAAAAAAANAAAAAAAAAAAAAAANAAEAAAAAAAAAAAANAAIAAAACAAAAAAANAAMAAAACAAAAAAAOAAAAAAAAAAAAAAAOAAIAAAACAAAAAAAOAAMAAAACAAAAAAAPAAAAAAAAAAAAAAAPAAEAAAAAAAAAAAAPAAIAAAACAAAAAAAPAAMAAAACAAAAAAAAAAsAAAABAAEAAAABAAsAAAABAAEAAAACAAsAAAABAAEAAAADAAsAAAABAAEAAAAEAAsAAAABAAEAAAAFAAsAAAABAAEAAAAGAAsAAAABAAEAAAAHAAsAAAABAAEAAAAIAAsAAAABAAEAAAAJAAsAAAABAAEAAAAKAAsAAAABAAEAAAALAAsAAAABAAEAAAAMAAsAAAABAAEAAAANAAsAAAABAAEAAAAOAAsAAAABAAEAAAAPAAsAAAABAAEAAAAAAAwAAAABAAEAAAABAAwAAAABAAEAAAACAAwAAAABAAEAAAADAAwAAAABAAEAAAAEAAwAAAABAAEAAAAFAAwAAAABAAEAAAAGAAwAAAABAAEAAAAHAAwAAAABAAEAAAAIAAwAAAABAAEAAAAJAAwAAAABAAEAAAAKAAwAAAABAAEAAAALAAwAAAABAAEAAAAMAAwAAAABAAEAAAANAAwAAAABAAEAAAAOAAwAAAABAAEAAAAPAAwAAAABAAEAAAAAAAoAAAACAAEAAAABAAoAAAACAAEAAAACAAoAAAACAAEAAAADAAoAAAACAAEAAAAEAAoAAAACAAEAAAAFAAoAAAACAAEAAAAGAAoAAAACAAEAAAAHAAoAAAACAAEAAAAIAAoAAAACAAEAAAAJAAoAAAACAAEAAAAKAAoAAAACAAEAAAALAAoAAAACAAEAAAAMAAoAAAACAAEAAAANAAoAAAACAAEAAAAOAAoAAAACAAEAAAAPAAoAAAACAAEAAAAAAA0AAAAAAAEAAAABAA0AAAAAAAEAAAACAA0AAAAAAAEAAAADAA0AAAAAAAEAAAAEAA0AAAAAAAEAAAAFAA0AAAAAAAEAAAAGAA0AAAAAAAEAAAAHAA0AAAAAAAEAAAAIAA0AAAAAAAEAAAAJAA0AAAAAAAEAAAAKAA0AAAAAAAEAAAALAA0AAAAAAAEAAAAMAA0AAAAAAAEAAAANAA0AAAAAAAEAAAAOAA0AAAAAAAEAAAAPAA0AAAAAAAEAAAAAAAkAAAABAAEAAAABAAkAAAABAAEAAAACAAkAAAABAAEAAAADAAkAAAABAAEAAAAEAAkAAAABAAEAAAAFAAkAAAABAAEAAAAGAAkAAAABAAEAAAAHAAkAAAABAAEAAAAIAAkAAAABAAEAAAAJAAkAAAABAAEAAAAKAAkAAAABAAEAAAALAAkAAAABAAEAAAAMAAkAAAABAAEAAAANAAkAAAABAAEAAAAOAAkAAAABAAEAAAAPAAkAAAABAAEAAAAAAA4AAAAAAAAAAAABAA4AAAAAAAAAAAACAA4AAAAAAAAAAAADAA4AAAAAAAAAAAAEAA4AAAAAAAAAAAAFAA4AAAAAAAAAAAAGAA4AAAAAAAAAAAAHAA4AAAAAAAAAAAAIAA4AAAAAAAAAAAAJAA4AAAAAAAAAAAAKAA4AAAAAAAAAAAALAA4AAAAAAAAAAAAMAA4AAAAAAAAAAAANAA4AAAAAAAAAAAAOAA4AAAAAAAAAAAAPAA4AAAAAAAAAAAAQAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAoAAAACAAEAAAAQAAkAAAABAAEAAAAQAAgAAAABAAEAAAAQAAsAAAABAAEAAAAQAAwAAAABAAEAAAAQAA0AAAAAAAEAAAAQAAcAAAAAAAEAAAAQAAYAAAACAAAAAAAQAAUAAAACAAAAAAAQAAQAAAACAAAAAAAQAAMAAAACAAAAAAAQAAIAAAACAAAAAAAQAA4AAAAAAAAAAAACAAEAAQAAAAAAAQAFAAEAAQAAAAAAAQAIAAEAAQAAAAAAAQALAAEAAQAAAAAAAQAOAAEAAQAAAAAAAQA=")
 tile_set = ExtResource("2_5powy")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=916975173]
 
-[node name="UIGame" parent="CanvasLayer" instance=ExtResource("13_drn0y")]
+[node name="UIGame" parent="CanvasLayer" unique_id=484647946 instance=ExtResource("13_drn0y")]

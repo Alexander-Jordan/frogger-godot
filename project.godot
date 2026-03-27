@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Froggie"
 run/main_scene="uid://4e0wub1b01en"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(1, 0.992157, 0.854902, 1)
 boot_splash/image="uid://52m8wxs1771b"
 config/icon="uid://c2wvcp3vaja7e"
