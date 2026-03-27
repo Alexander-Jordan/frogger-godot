@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://byjgqjiya7ka6"]
+[gd_resource type="TileSet" format=3 uid="uid://byjgqjiya7ka6"]
 
 [ext_resource type="Texture2D" uid="uid://c3t0i6m8xvp0u" path="res://stages/main/level_spritesheet.png" id="1_hasld"]
 [ext_resource type="PackedScene" uid="uid://dmnuv4luee478" path="res://entities/lilypad/lilypad.tscn" id="2_vowki"]
